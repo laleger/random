@@ -1,0 +1,41 @@
+host,attack,technique,"min_time","max_time",ioc,sourcetype
+cassiopeia,scanning,T1595,"1502462508.381000","1502897627.951277","136.0.0.125;136.0.2.138;w3af.org","mysql:server:stats;mysql:transaction:details;stream:dns;stream:ip;stream:tcp;who"
+"ec2-52-40-10-231.us-west-2.compute.amazonaws.com:8088",scanning,T1595,1502840186,1502840186,"45.77.65.211","csp-violation"
+eridanus,osint,T1589,"1501920912.000","1502180362.000","85.203.47.86;company_contacts.xlsx;naenarabrowser","access_combined;apache_error;netstat;stream:http;stream:ip;stream:tcp"
+gacrux,scanning,T1595,"1502462456.000","1502897351.000","136.0.0.125;136.0.2.138;45.77.65.211;naenarabrowser;w3af.org","access_combined;apache_error;netstat;stream:http;stream:ip;stream:tcp"
+growler,c2,T1071,1503545360,1503735964,"45.77.65.211","pan:traffic"
+growler,"exfil_ftp",T1048,1503729974,1503729974,"topsecretyeast.pdf","pan:threat"
+growler,scanning,T1595,1502897350,1502897354,"136.0.2.138","pan:system"
+jupiter,c2,T1071,"1503545325.958561","1503735932.057000","18c13d226f7e39f45f22da35acc288a8af6bff23ca1d85b9a3fd3e36e52397d0;1acb3a5aaa46fc13f788a448716f841168f82227;45.77.65.211;671dfe1d4f15c5a05f21ddb66d3b7815","stream:tcp;suricata"
+jupiter,"data_staging",T1074,"1503543965.249","1503725950.739","topsecretyeast.pdf;yeast_recipes","stream:smb"
+jupiter,"exfil_dns",T1048,"1503730220.787","1503735933.258","hildegardsfarm.com","stream:dns"
+jupiter,"exfil_ftp",T1048,"1503725305.089","1503729934.958","frothly_passwords.kdbx;topsecretyeast.pdf","stream:ftp"
+jupiter,"exfil_ftp",T1105,"1503545775.397","1503547216.831",".hwp;dns.py;nc.exe;psexec;wget64;winsys64","stream:ftp"
+jupiter,scanning,T1595,"1502840152.667","1502840152.667","45.77.65.211","stream:http"
+matar,scanning,T1595,"1502839885.988","1502896477.885","136.0.2.138","stream:smtp"
+matar,spearphishing,T1566,"1503545233.990","1503545253.239","0fa0f1b660962d4a4d1cd6782a03db05;185.83.51.21;invoice.zip;jsmith@urinalysis.com;smtp12.ymlpsvr.com","stream:smtp"
+mercury,"create_account",T1136,1503548335,1503548579,svcvnc,"ActiveDirectory;wineventlog"
+mercury,"exfil_ftp",T1105,1503548200,1503548200,"ftp.exe;winsys32","WinRegistry;wineventlog"
+mercury,"powershell_empire",T1059,1503546914,1503735687,"powershell.exe -enc;whoami.exe","WinHostMon;wineventlog"
+mercury,"sched_task",T1053,1503548424,1503548424,"network\debug",WinRegistry
+venus,c2,T1071,1503546925,1503735964,"45.77.65.211",xmlwineventlog
+venus,"create_account",T1136,1503547851,1503547851,svcvnc,"WinRegistry;wineventlog"
+venus,"exfil_dns",T1048,1503730254,1503735917,"dns.py","WinHostMon;wineventlog;xmlwineventlog"
+venus,"exfil_ftp",T1105,1503547647,1503547647,"ftp.exe;winsys32","WinRegistry;wineventlog;xmlwineventlog"
+venus,"lateral_movement",T1021,1503546914,1503546914,"service3;wmiprvse.exe",xmlwineventlog
+venus,"powershell_empire",T1059,1503546914,1503735917,"powershell.exe -enc;whoami.exe","WinHostMon;wineventlog;xmlwineventlog"
+venus,"sched_task",T1053,1503547956,1503547956,"network\debug",WinRegistry
+"wrk-btun","create_account",T1136,1503546121,1503546129,svcvnc,"WinRegistry;wineventlog"
+"wrk-btun","exfil_ftp",T1048,1503726126,1503729817,"ftp.exe;hildegardsfarm.com;winsys64","WinHostMon;wineventlog;xmlwineventlog"
+"wrk-btun","exfil_ftp",T1105,1503545809,1503545809,winsys32,"wineventlog;xmlwineventlog"
+"wrk-btun","lateral_movement",T1021,1503545348,1503545348,"service3;wmiprvse.exe",xmlwineventlog
+"wrk-btun","powershell_empire",T1059,1503545348,1503735425,"powershell.exe -enc;whoami.exe","WinHostMon;WinRegistry;wineventlog;xmlwineventlog"
+"wrk-btun","sched_task",T1053,1503546303,1503546303,"network\debug",WinRegistry
+"wrk-btun",userexec,T1204,1503545310,1503545335,"invoice.doc;invoice.zip","wineventlog;xmlwineventlog"
+"wrk-klagerf","create_account",T1136,1503547374,1503547374,svcvnc,"WinRegistry;wineventlog"
+"wrk-klagerf","exfil_ftp",T1048,1503725337,1503725337,winsys64,"wineventlog;xmlwineventlog"
+"wrk-klagerf","exfil_ftp",T1105,1503547230,1503547230,winsys32,"wineventlog;xmlwineventlog"
+"wrk-klagerf","indicator_removal",T1070,1503725411,1503725428,"wevtutil.exe","wineventlog;xmlwineventlog"
+"wrk-klagerf","lateral_movement",T1021,1503546913,1503546913,"service3;wmiprvse.exe",xmlwineventlog
+"wrk-klagerf","powershell_empire",T1059,1503546913,1503735816,"powershell.exe -enc;whoami.exe","WinHostMon;wineventlog;xmlwineventlog"
+"wrk-klagerf","sched_task",T1053,1503547466,1503547466,"network\debug",WinRegistry
